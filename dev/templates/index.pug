@@ -8,8 +8,10 @@ block content
       .sidebar
         img.wo-logo(src='../img/wo-logo.svg' alt='WONDER ONE')
         .soc
-          img.wo-fb(src='../img/Facebook_icon.svg' alt='WONDER ONE FACEBOOK')
-          img.wo-inst(src='../img/Instagram_icon.svg' alt='WONDER ONE INSTAGRAM')
+          a(href='https://facebook.com/wonderone' target='_blank')
+            img.wo-fb(src='../img/Facebook_icon.svg' alt='WONDER ONE FACEBOOK')
+          a(href='https://instagram.com/wonderone.xyz' target='_blank')
+            img.wo-inst(src='../img/Instagram_icon.svg' alt='WONDER ONE INSTAGRAM')
       .content
         .slide.active(data-id='1')
           .slider.active
@@ -31,14 +33,22 @@ block content
             img(src='../img/sc-six-img.png')
             p.txt-slider ЛЮБИШЬ СТРИЖКИ <br> НА ДОМУ? ЛЮБИ И <br> <span class='txt-bold'>ПАРИКМАХЕРСКУЮ</span>
           .dot-slider
-            a(data-id='1' data-click-action="Front:smallSlideSwitch").dot.active
-            a(data-id='2' data-click-action="Front:smallSlideSwitch").dot
-            a(data-id='3' data-click-action="Front:smallSlideSwitch").dot
-            a(data-id='4' data-click-action="Front:smallSlideSwitch").dot
-            a(data-id='5' data-click-action="Front:smallSlideSwitch").dot
-            a(data-id='6' data-click-action="Front:smallSlideSwitch").dot
+            button(data-id='1' data-click-action="Front:smallSlideSwitch").dot.active
+            button(data-id='2' data-click-action="Front:smallSlideSwitch").dot
+            button(data-id='3' data-click-action="Front:smallSlideSwitch").dot
+            button(data-id='4' data-click-action="Front:smallSlideSwitch").dot
+            button(data-id='5' data-click-action="Front:smallSlideSwitch").dot
+            button(data-id='6' data-click-action="Front:smallSlideSwitch").dot
         .slide(data-id='2')
-          .sc-two Screen 2
+          .ul.services-list
+            li.services 01
+            li.services 01
+            li.services 01
+            li.services 01
+            li.services 01
+            li.services 01
+            li.services 01
+            li.services 01
         .slide(data-id='3')
           .sc-three Screen 3
         .slide(data-id='4')
