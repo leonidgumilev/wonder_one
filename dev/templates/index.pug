@@ -1,0 +1,47 @@
+extends template/main
+append vars
+    -
+      page_title = 'Парикмахерская'
+block content
+  main
+    .section
+      .sidebar
+        img.wo-logo(src='../img/wo-logo.svg' alt='WONDER ONE')
+        .soc
+          img.wo-fb(src='../img/Facebook_icon.svg' alt='WONDER ONE FACEBOOK')
+          img.wo-inst(src='../img/Instagram_icon.svg' alt='WONDER ONE INSTAGRAM')
+      .content
+        .slide.active(data-id='1')
+          .slider.active
+            img(src='../img/sc-one-img.png')
+            p.txt-slider WONDER ONE — <br> ПРОСТО <span class='txt-bold'>ПАРИКМАХЕРСКАЯ</span> <br> В ТВОЕМ ГОРОДЕ
+          .slider
+            img(src='../img/sc-two-img.png')
+            p.txt-slider КОНЕЦ Е####ГО 20X0,<br> САМОЕ ВРЕМЯ ДЛЯ <br>ТВОЕЙ <span class='txt-bold'>НОВОЙ ПРИЧЕСКИ</span>
+          .slider
+            img(src='../img/sc-three-img.png')
+            p.txt-slider У НАС ДЛЯ ТЕБЯ ЕСТЬ <br> <span class='txt-bold'>КЛУБНАЯ КАРТА,</span> <br> УЗНАЙ КАК ЕЁ ЗАБРАТЬ
+          .slider
+            img(src='../img/sc-four-img.png')
+            p.txt-slider НИКАКИХ “И ПОКОРОЧЕ, И <br> ПОДЛИННЕЕ” — <span class='txt-bold'>СТРИЖЕМ</span> <br> <span class='txt-bold'>КАК НАДО</span> И ВСЕ ТУТ
+          .slider
+            img(src='../img/sc-five-img.png')
+            p.txt-slider НОВЫЙ ХАЙЕР ОТ <br> ТЁТЬ ГАЛИ УЖЕ НЕ ТО? <br> <span class='txt-bold'>ЖДЕМ ТЕБЯ У НАС<span>
+          .slider
+            img(src='../img/sc-six-img.png')
+            p.txt-slider ЛЮБИШЬ СТРИЖКИ <br> НА ДОМУ? ЛЮБИ И <br> <span class='txt-bold'>ПАРИКМАХЕРСКУЮ</span>
+          .dot-slider
+            a(data-id='1' data-click-action="Front:smallSlideSwitch").dot.active
+            a(data-id='2' data-click-action="Front:smallSlideSwitch").dot
+            a(data-id='3' data-click-action="Front:smallSlideSwitch").dot
+            a(data-id='4' data-click-action="Front:smallSlideSwitch").dot
+            a(data-id='5' data-click-action="Front:smallSlideSwitch").dot
+            a(data-id='6' data-click-action="Front:smallSlideSwitch").dot
+        .slide(data-id='2')
+          .sc-two Screen 2
+        .slide(data-id='3')
+          .sc-three Screen 3
+        .slide(data-id='4')
+          .sc-four Screen 4
+        .slide(data-id='5')
+          .sc-five Screen 5
