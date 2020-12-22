@@ -208,7 +208,7 @@ input {
     width: 174px;
     position: absolute;
     z-index: 160;
-    top: 390px;
+    top: 384px;
     right: 201px;
     margin: auto;
     display: flex;
@@ -229,6 +229,42 @@ input {
       border-color: #000000; }
       .dot.active:before {
         background: transparent; }
+  .services-list {
+    text-decoration: none;
+    width: 770px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 28px; }
+  .services-desc {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -14px;
+    margin-left: -8px; }
+    .services-desc img {
+      width: 10px;
+      height: 12px; }
+  .services {
+    flex: 0 0 23%;
+    padding-bottom: 28px; }
+    .services img {
+      display: block;
+      margin-top: 3px; }
+  .services-txt {
+    font-size: 14px;
+    margin-left: 8px; }
+  .map-stroke {
+    position: absolute;
+    width: 880px;
+    height: 390px;
+    margin-left: 68px;
+    margin-top: -12px; }
+  .wo-about {
+    width: 520px;
+    height: 95px;
+    position: relative;
+    left: 70px; }
   .bottom-list {
     padding-bottom: 58px;
     float: right; }
