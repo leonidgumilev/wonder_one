@@ -10,6 +10,9 @@ header, footer
 footer
   bottom: 0
 
+header
+  height: auto
+
 main
   width: 100%
   height: 100vh
@@ -17,19 +20,27 @@ main
   background: #232323
 
 .sidebar
+  padding: 0
   position: fixed
-  float: left
+  left: 204px
   width: 62px
   height: 100%
   z-index: 40
   top: 42px
+  display: block
 
 .wo-logo
   padding-bottom: 34px
 
+.burger-btn
+  display: none
+
 .soc
   +wh(48px)
   margin: auto
+  opacity: 1
+  visibility: visible
+  display: block
 
 .soc:after, .soc:before
   +af
@@ -83,31 +94,35 @@ main
   opacity: 0
 
 .menu
-  cursor: pointer
-  float: right
+  flex-direction: row
   padding-top: 58px
+  opacity: 1
+  visibility: visible
+  left: 584px
+  position: relative
+  top: 0px
+
 
 .menu li
   display: inline-block
-  margin-right: 50px
 
-.menu li:last-child
+//.menu li:last-child
   margin-right: 0
 
-.menu li:nth-child(1)
-  width: 57px
+  .menu li:nth-child(1)
+    width: 57px
 
-.menu li:nth-child(2)
-  width: 55px
+  .menu li:nth-child(2)
+    width: 55px
 
-.menu li:nth-child(3)
-  width: 44px
+  .menu li:nth-child(3)
+    width: 44px
 
-.menu li:nth-child(4)
-  width: 128px
+  .menu li:nth-child(4)
+    width: 128px
 
-.menu li:nth-child(5)
-  width: 98px
+  .menu li:nth-child(5)
+    width: 98px
 
 .slider
   +wh(1050px, 651px)
@@ -145,7 +160,7 @@ main
   top: 0
   bottom: 0
   z-index: 120
-  right: 42px
+  right: 56px
   margin: auto
   height: 180px
 
@@ -153,8 +168,8 @@ main
   +w(174px)
   position: absolute
   z-index: 160
-  top: 390px
-  right: 201px
+  top: 400px
+  right: 234px
   margin: auto
   display: flex
   justify-content: space-between
@@ -174,16 +189,126 @@ main
     &:before
       background: transparent
 
+.services-list
+  text-decoration: none
+  +wh(808px, 240px)
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: -60px
+  position: relative
+  left: 100px
+
+.services-desc
+  display: flex
+  align-items: flex-start
+  margin-top: -14px
+  margin-left: 57px
+  //img
+    +wh(10px, 12px)
+
+.services
+  flex: 0 0 23%
+  padding-bottom: 28px
+  img
+    display: block
+    margin-top: 3px
+
+.services-txt
+  font-size: 14px
+  margin-left: 8px
+
+.map-stroke
+  position: absolute
+  +wh(800px, 390px)
+  margin-left: 80px;
+  margin-top: -12px;
+
+.fmap
+  width: 780px
+  height: 390px
+  margin-left: 72px
+
+.wo-about
+  +wh(520px, 95px)
+  position: relative
+  left: 70px
+
+.bottom
+  position: relative
+  left: 80px
+
+.bottom li:first-child
+  background: $black
+  color: #ffffff
+  padding-right: 6px
+  padding-left: 6px
+
 .bottom-list
   padding-bottom: 58px
-  float: right
 
 .bottom li
   display: inline-block
   margin-right: 56px
 
-.bottom li:last-child
-  margin-right: 0
-  text-decoration: underline
-  font-family: $f_bold
+.blya
+  cursor: pointer
 
+.blya:hover
+  font-family: $f_bold
+  transition: .35s ease
+
+.pp
+  width: 96px
+
+.cb
+  width: 82px
+
+.pp
+  margin-right: 0
+
+.pp-txt
+  +wh(706px, 400px)
+  position: relative
+  left: 76px
+  overflow: auto
+  padding-right: 30px
+
+.yWidgetBlock
+  z-index: 10002
+  left: 180px
+  top: 0 !important
+  bottom: 0 !important
+  margin: auto
+  min-width: 780px !important
+  max-height: 440px !important
+  border: solid 4px #848484
+
+.yCloseIcon
+  display: none !important
+  opacity: 0
+
+.yWidgetCover
+  display: none !important
+  opacity: 0
+
+.pp-txt p
+  margin-bottom: 20px
+
+.cb-s
+  +w(458px)
+  display: inline-block
+  justify-content: center
+  position: relative
+  left: 80px
+
+.cb-s img
+  padding-right: 20px
+  padding-bottom: 18px
+
+.cb-s img:first-child
+ padding-left: 8px
+
+.cb-s img:last-child
+  padding-right: 0
+  margin-left: 0

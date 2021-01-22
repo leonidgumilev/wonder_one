@@ -23,7 +23,7 @@ class Front extends _front {
 
     switchScreen(dataClickAction) {
         let sections = document.querySelectorAll('.slide');
-        let lis = document.querySelectorAll('.menu li');
+        let lis = document.querySelectorAll('.blya');
         sections = Array.from(sections);
         let indexOfActive = dataClickAction['item'].dataset.sectionId;//sections.findIndex(section => section.classList.contains('active'));
 
@@ -32,7 +32,15 @@ class Front extends _front {
                 section.classList.remove('active');
             }
         }
+        if(dataClickAction['item'].dataset.sectionId != '3'){
+            if(document.querySelector('.yWidgetBlock')){
+                document.querySelector('.yWidgetBlock').style.zIndex = '-1';
+            }
 
+        }else{
+
+            document.querySelector('.yWidgetBlock').style.zIndex = '100002';
+        }
         sections.forEach(rmClass);
         lis.forEach(rmClass);
         dataClickAction['item'].classList.add('active');
@@ -105,7 +113,7 @@ function randomNormal(o) {
     return e = a * Math.sqrt(-2 * Math.log(r) / r), t * e + l
 }
 
-const NUM_PARTICLES = 4;
+const NUM_PARTICLES = 24;
 const PARTICLE_SIZE = 8; // View heights
 const SPEED = 200000; // Milliseconds
 

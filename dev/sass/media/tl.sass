@@ -1,1 +1,315 @@
 $unit: 'px'
+
+header, footer
+  +w(1004px)
+  left: 0
+  right: 0
+  position: fixed
+  z-index: 100
+
+footer
+  bottom: 0
+
+main
+  width: 100%
+  height: 100vh
+  position: relative
+  background: #232323
+
+.sidebar
+  position: fixed
+  padding: 0
+  left: 40px
+  width: 62px
+  height: 100%
+  z-index: 40
+  top: 42px
+  display: block
+
+.wo-logo
+  padding-bottom: 34px
+
+.burger-btn
+  display: none
+
+.soc
+  +wh(48px)
+  margin: auto
+  opacity: 1
+  visibility: visible
+  display: block
+
+.soc:after, .soc:before
+  +af
+  //+wh(1px, 172px)
+  +wh(1px, 22vh)
+  background: $gray
+  margin: auto
+
+.wo-fb
+  padding-bottom: 8px
+  padding-top: 24px
+  cursor: pointer
+
+.wo-inst
+  padding-bottom: 24px
+  cursor: pointer
+
+.section
+  +w(1004px)
+
+.slide
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  transition: all .3s ease-in-out
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #000
+  opacity: 0
+  z-index: 0
+
+  &.active
+    opacity: 1
+    z-index: 20
+
+.menu li.active
+  font-family: $f_bold
+
+.menu li.active:after
+  +af
+  width: 14px
+  height: 2px
+  background-color: $black
+  margin-top: 4px
+
+.beforeSwitchIn
+  opacity: 0
+
+.menu
+  flex-direction: row
+  padding-top: 58px
+  opacity: 1
+  visibility: visible
+  left: 166px
+  position: relative
+  top: 0px
+
+
+.menu li
+  display: inline-block
+  margin-right: 50px
+
+//.menu li:last-child
+  margin-right: 0
+
+  .menu li:nth-child(1)
+    width: 57px
+
+  .menu li:nth-child(2)
+    width: 55px
+
+  .menu li:nth-child(3)
+    width: 44px
+
+  .menu li:nth-child(4)
+    width: 128px
+
+  .menu li:nth-child(5)
+    width: 98px
+
+.slider
+  +w(1050px)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  transition: all .3s ease-in-out
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #000
+  opacity: 0
+  visibility: hidden
+  z-index: 0
+
+  &.active
+    opacity: 1
+    visibility: visible
+    z-index: 20
+
+.slider img
+  +wh(497px, 440px)
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 140px
+  margin: auto
+
+.txt-slider
+  +w(556px)
+  font-size: 36px
+  position: absolute
+  top: 158px;
+  bottom: 0;
+  z-index: 120;
+  right: 48px;
+  margin: auto
+  height: 120px
+
+.dot-slider
+  +w(174px)
+  position: absolute
+  z-index: 160
+  top: 370px
+  right: 68px
+  margin: auto
+  display: none
+  justify-content: space-between
+
+.dot
+  border: 3px solid transparent
+  border-radius: 100%
+  cursor: pointer
+
+  &:before
+    +af
+    +wh(13px)
+    border-radius: 100%
+    background: $black
+    display: block
+
+  &.active
+    border-color: $black
+
+    &:before
+      background: transparent
+
+.services-list
+  +wh(520px, 240px)
+  top: 36px
+  text-decoration: none
+  display: grid
+  grid-template-columns: 200px 15em 30%
+  //flex-wrap: wrap
+  justify-content: space-between
+  //margin-bottom: -130px
+  position: relative
+  left: -20px
+
+.services-desc
+  display: flex
+  align-items: flex-start
+  margin-top: -14px
+  margin-left: 57px
+//img
+//+wh(10px, 12px)
+
+.services
+  flex: 0 0 23%
+  padding-bottom: 28px
+
+  img
+    display: block
+    margin-top: 3px
+
+.services-txt
+  font-size: 14px
+  margin-left: 8px
+
+.map-stroke
+  +wh(630px, 250px)
+  position: absolute
+  margin-left: 50px;
+  margin-top: -12px;
+
+.fmap
+  width: 530px
+  height: 250px
+  margin-left: 68px
+
+.wo-about
+  +wh(390px, 95px)
+  position: relative
+  left: 40px
+
+.bottom
+  +w(588px)
+  position: relative
+  left: 46px
+
+.bottom li:first-child
+  background: $black
+  color: #ffffff
+  padding-right: 6px
+  padding-left: 6px
+
+.bottom-list
+  padding-bottom: 58px
+  padding-right: 20px
+
+.bottom li
+  display: inline-block
+  margin-right: 56px
+
+.blya
+  cursor: pointer
+
+.blya:hover
+  font-family: $f_bold
+  transition: .35s ease
+
+.pp
+  margin-right: 0
+
+.pp-txt
+  +wh(520px, 280px)
+  overflow: auto
+  position: relative
+  left: 50px
+//padding-right: 10px
+
+.yWidgetBlock
+  z-index: 10002
+  left: 180px
+  top: 0 !important
+  bottom: 0 !important
+  margin: auto
+  min-width: 780px !important
+  max-height: 440px !important
+  border: solid 4px #848484
+
+.yCloseIcon
+  display: none !important
+  opacity: 0
+
+.yWidgetCover
+  display: none !important
+  opacity: 0
+
+.cb-s
+  +w(424px)
+  display: inline-block
+  justify-content: center
+  position: relative
+  left: 40px
+
+.cb-s img
+  padding-right: 34px
+
+.cb-s img:first-child
+  padding-left: 8px
+
+.cb-s img:last-child
+  padding-right: 0
+  margin-left: 0
+
+.cb-s img:last-child
+  padding-right: 0
+  margin-left: 0
