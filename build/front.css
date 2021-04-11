@@ -31,11 +31,13 @@ img {
 
 @font-face {
   src: url(fonts/OpenSans-Regular.ttf);
-  font-family: "OpenSans-Regular"; }
+  font-family: "OpenSans-Regular";
+  font-display: swap; }
 
 @font-face {
   src: url(fonts/OpenSans-Bold.ttf);
-  font-family: "OpenSans-Bold"; }
+  font-family: "OpenSans-Bold";
+  font-display: swap; }
 
 .set {
   width: 100%;
@@ -502,7 +504,7 @@ main {
     padding-top: 58px;
     opacity: 1;
     visibility: visible;
-    left: 72px;
+    left: 162px;
     position: relative;
     top: 0px; }
   .menu li {
