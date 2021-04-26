@@ -318,7 +318,7 @@ main {
   margin-left: 57px; }
 
 .services {
-  flex: 0 0 23%;
+  flex: 0 0 100%;
   padding-bottom: 28px; }
   .services img {
     display: block;
@@ -589,7 +589,7 @@ main {
     margin-top: -14px;
     margin-left: 57px; }
   .services {
-    flex: 0 0 23%;
+    flex: 0 0 50%;
     padding-bottom: 28px; }
     .services img {
       display: block;
@@ -840,7 +840,7 @@ main {
     margin-top: -14px;
     margin-left: 57px; }
   .services {
-    flex: 0 0 23%;
+    flex: 0 0 50%;
     padding-bottom: 28px; }
     .services img {
       display: block;
@@ -1082,7 +1082,6 @@ main {
     height: 240px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: -60px;
     position: relative;
     left: 100px; }
@@ -1092,7 +1091,7 @@ main {
     margin-top: -14px;
     margin-left: 57px; }
   .services {
-    flex: 0 0 23%;
+    flex: 0 0 25%;
     padding-bottom: 28px; }
     .services img {
       display: block;
